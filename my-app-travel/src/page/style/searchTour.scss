@@ -1,0 +1,18 @@
+.search-result{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    h1{
+        text-align: center;
+        color: cornflowerblue;
+        font-weight: 700;
+        span{
+            color: brown;
+            margin-left: 20px;
+        }
+    }
+    & > p{
+        color: rgb(3, 100, 145);
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+}

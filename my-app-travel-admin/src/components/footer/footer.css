@@ -1,0 +1,59 @@
+.footer-copy-right {
+  width: 80%;
+  margin: auto;
+}
+.footer {
+  min-height: 200px;
+  display: flex;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  border-bottom: 1px solid yellow;
+  padding-bottom: 50px;
+}
+.footer .colum {
+  padding-top: 50px;
+  flex-grow: 3;
+}
+.footer .colum a {
+  clear: both;
+  display: block;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.footer .colum a:hover {
+  color: rgb(15, 121, 163);
+  background-color: transparent;
+}
+.copy-right {
+  height: 100px;
+  padding-top: 50px;
+}
+@media (max-width: 450px) {
+  .footer {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer .colum {
+    padding-top: 40px;
+  }
+  .footer .colum iframe {
+    margin-top: 100px;
+    width: 100%;
+    /* margin: auto; */
+  }
+}
+html
+  body
+  div#root
+  div.App
+  div.App
+  div.app-footer
+  div.footer-copy-right
+  div.footer
+  div.colum
+  div.Collapsible
+  div.Collapsible__contentOuter {
+  width: 100%;
+}

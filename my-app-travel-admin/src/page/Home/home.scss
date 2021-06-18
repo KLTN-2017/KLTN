@@ -1,0 +1,42 @@
+.list-admin {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .item-admin {
+    width: 20%;
+    margin: 1%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 153, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    flex-direction: column;
+    i {
+      font-size: 50px;
+      color: yellow;
+      margin-bottom: 10px;
+    }
+    a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    &:hover {
+      opacity: 0.8;
+      a {
+        color: yellow;
+      }
+      i {
+        color: green;
+      }
+    }
+  }
+}
+h1 {
+  text-align: center;
+  color: darkcyan !important;
+  font-weight: 600 !important;
+}

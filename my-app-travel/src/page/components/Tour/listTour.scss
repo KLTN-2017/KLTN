@@ -1,0 +1,82 @@
+@import '~rc-pagination/assets/index.css';
+.list-tour {
+  // background-color: red;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  position: relative;
+  // justify-content: center;
+  align-items: center;
+  h1 {
+    color: #1890ff;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .filter-tour {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  a {
+    width: 30%;
+    margin: 1%;
+  }
+  .item {
+    width: 33.3%;
+    padding: 5px;
+    img {
+      width: 100%;
+      height: 230px;
+    }
+  }
+  .loading-tour {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .pagination {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rc-pagination-item {
+      width: 50px;
+      a {
+        color: rgb(5, 64, 92);
+        font-weight: 600;
+        &:hover {
+          color: #ffff;
+        }
+      }
+    }
+    .rc-pagination-item-active {
+      background: #1890ff;
+      a {
+        color: #ffff;
+      }
+    }
+  }
+  div.Collapsible {
+    width: 100%;
+    div.Collapsible__contentOuter{
+      overflow: auto;
+    }
+    span.Collapsible__trigger.is-closed i.fas.fa-align-justify,
+    span.Collapsible__trigger.is-open i.fas.fa-align-justify {
+      font-size: 40px;
+      float: right;
+    }
+  }
+}
+
+

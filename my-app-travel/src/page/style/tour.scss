@@ -1,0 +1,62 @@
+.body-tour {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  .fiter-tour {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    ul {
+      margin-bottom: 30px;
+      &:first-child {
+        margin-top: 30px;
+      }
+      & > li > ul > li {
+        color: rgb(255, 187, 0);
+        padding: 7px 10px;
+        display: flex;
+        // cursor: pointer;
+        &:first-child {
+          margin-top: 10px;
+        }
+        i {
+          margin-left: 2px;
+          // font-size: 10px;
+        }
+        input {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .list-tour {
+    width: 100%;
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 550px) {
+  div.slide div.search {
+    bottom: -20%;
+  }
+  div.list-tour div.list-tour {
+    div.Collapsible span.Collapsible__trigger.is-closed {
+      display: flex;
+      justify-content: flex-end;
+    }
+    a {
+      width: 100%;
+    }
+    div.pagination {
+      width: 100%;
+      padding-top: 20px;
+      div.pagination ul.rc-pagination li.rc-pagination-item {
+        width: 10px;
+      }
+    }
+  }
+}

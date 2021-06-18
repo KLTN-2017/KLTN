@@ -1,0 +1,62 @@
+.slide {
+  h3 {
+    position: relative;
+    img {
+      width: 100vw;
+      height: 600px;
+    }
+    div.action{
+      position: absolute;
+        bottom: 50px;
+        right: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        button{
+          margin: 10px;
+          cursor: pointer;
+        }
+    }
+  }
+}
+.slide .slick-next {
+  right: 1% !important;
+}
+.slide .slick-prev {
+  left: 1% !important;
+}
+.slide .slick-next,
+.slide .slick-prev {
+  z-index: 1;
+  width: 50px !important;
+  height: 50px !important;
+  /* background-color: red; */
+}
+.slide .slick-next::before,
+.slide .slick-prev::before {
+  font-size: 40px;
+  color: yellow;
+}
+
+@media (max-width: 450px) {
+  .slide img {
+    height: 280px;
+  }
+  .slide .slick-next::before,
+  .slide .slick-prev::before {
+    font-size: 20px;
+    color: yellow;
+  }
+}
+
+
+html body.ant-scrolling-effect div div.ant-modal-root div.ant-modal-wrap div.ant-modal div.ant-modal-content div.ant-modal-body span.ant-upload-picture-card-wrapper.avatar-uploader div.ant-upload.ant-upload-select.ant-upload-select-picture-card {
+  width: 100%;
+  height: 300px;
+  span.ant-upload img{
+    width: 100%;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,33 @@
+.slide img {
+  width: 100vw;
+  height: 600px;
+}
+.slide .slick-next {
+  right: 1% !important;
+}
+.slide .slick-prev {
+  left: 1% !important;
+}
+.slide .slick-next,
+.slide .slick-prev {
+  z-index: 1;
+  width: 50px !important;
+  height: 50px !important;
+  /* background-color: red; */
+}
+.slide .slick-next::before,
+.slide .slick-prev::before {
+  font-size: 40px;
+  color: yellow;
+}
+
+@media (max-width: 550px) {
+  .slide img {
+    height: 280px;
+  }
+  .slide .slick-next::before,
+  .slide .slick-prev::before {
+    font-size: 20px;
+    color: yellow;
+  }
+}

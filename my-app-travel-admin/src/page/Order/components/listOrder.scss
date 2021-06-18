@@ -1,0 +1,102 @@
+
+.list-order {
+    min-height: 600px;
+    .chart-order {
+        width: 80%;
+        max-width: 700px;
+        margin: auto;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+    .filter-value {
+        div {
+            h3{
+                color: crimson;
+                font-weight: 600;
+            }
+            p{
+                font-size: 20px;
+                color: rgb(15, 160, 170);
+            }
+        }
+    }
+  .body{
+      
+      width: 100%;
+        .item-order {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid blue;
+    margin: 10px 0;
+    padding: 10px 0;
+    span {
+        width: 5%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span.medium {
+        width: 15%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span.big {
+        width: 20%;
+        margin: 5px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    img{
+        width: 15%;
+        margin: 5px;
+        height: 100px;
+    }
+}
+  }
+ .title{
+        color: darkorchid;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid red;
+        span.big{
+            justify-content: center;
+        }
+    }
+    .filter{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        &:first-child{
+            color: rgb(9, 255, 0);
+            font-size: 40px;
+            cursor: pointer;
+            margin-left: 30px;
+            &:hover{
+                color: green;
+            }
+            float: right;
+        }
+        i{
+            color: red;
+            font-size: 40px;
+            cursor: pointer;
+            margin-left: 30px;
+            &:hover{
+                color: green;
+            }
+            float: right;
+        }
+        
+    }
+}
+
+html body.ant-scrolling-effect div div.ant-modal-root div.ant-modal-wrap div.ant-modal div.ant-modal-content div.ant-modal-body div.ant-picker {
+    display: block;
+}

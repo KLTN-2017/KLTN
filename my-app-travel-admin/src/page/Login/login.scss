@@ -1,0 +1,31 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login-google {
+    width: 60%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 34px -17px rgba(0, 0, 0, 0.75);
+    padding: 50px 0;
+    img {
+      width: 30%;
+    }
+    button {
+      width: 300px;
+      background-color: crimson !important;
+      div {
+        width: 30%;
+      }
+      span {
+        font-weight: 600 !important;
+        color:#ffff;
+      }
+    }
+  }
+}

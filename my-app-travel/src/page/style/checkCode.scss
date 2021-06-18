@@ -1,0 +1,27 @@
+.check-code {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    flex-direction: column;
+    h1{
+        color: cornflowerblue;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    input {
+        width: 400px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    button{
+        width: 100px;
+        padding: 10px;
+        background-color: rgb(21, 212, 148);
+        border: none;
+        cursor: pointer;
+    }
+}

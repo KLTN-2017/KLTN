@@ -1,0 +1,117 @@
+.weather-info {
+    width: 100%;
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        color: darkcyan;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: darkcyan;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .search-city {
+        width: 40%;
+        position: relative;
+        margin: auto;
+        margin-bottom: 30px;
+        input {
+        display: block;
+        margin: auto;
+        width: 100%;
+        min-width: 300px;
+        font-size: 1.2rem;
+        padding: 15px 20px;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid green;
+        &:focus {
+            outline: none;
+        }
+    }
+    .drop-down-city{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(231, 225, 216);
+        top: 60px;
+        ul li {
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            &:hover{
+                background-color: chocolate;
+            }
+
+        }
+    }
+    }
+    
+    
+}
+
+.list-item-weather {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .item{
+            width: 24%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid green;
+            background-color: #4ca8a82e;
+            margin: 20px 0.5%;
+            padding: 20px 5px;
+            border-radius: 10px;
+            p{
+                margin-bottom: 10px;
+            }
+            .main{
+                color: darkcyan;
+                font-weight: 500;
+            }
+            .time {
+                color: rgb(252, 186, 21);
+                margin-top: 10px;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+            .temp{
+                color: crimson;
+            }
+            .cloud-wind{
+                color: darkslategrey;
+            }
+        }
+    }
+
+
+
+@media (max-width: 450px) { 
+    .weather-info .search-city{
+        width: 100%;
+        input {
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+    }
+    .weather-info .list-item-weather .item{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

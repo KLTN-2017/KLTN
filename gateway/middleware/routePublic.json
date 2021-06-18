@@ -1,0 +1,128 @@
+{
+  "data": [
+    {
+      "link": "/api-tour/tour-top",
+      "method": "GET"
+    },
+    {
+      "link": "/api-tour/tour/type/national/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-tour/tour/type/international/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-tour/tour-data-filter",
+      "method": "GET"
+    },
+    {
+      "link": "/api-tour/tours-filter/*",
+      "method": "POST"
+    },
+    {
+      "link": "/api-tour/tour/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-tour/tour-relation/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-tour/tour-by-list-id",
+      "method": "POST"
+    },
+    {
+      "link": "/api-hotel/hotel-star",
+      "method": "GET"
+    },
+    {
+      "link": "/api-hotel/hotel-zone",
+      "method": "GET"
+    },
+    {
+      "link": "/api-hotel/hotel-filter/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-hotel/hotel/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-hotel/hotel-by-list-id",
+      "method": "POST"
+    },
+    {
+      "link": "/api-hotel/hotel-relation/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car-type",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car-numbersit",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car-year",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car-by-list-id",
+      "method": "POST"
+    },
+    {
+      "link": "/api-car/car-filter/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car-relation/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-news/page/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-news/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-news/relation/*",
+      "method": "GET"
+    },
+    {
+      "link": "/api-news/rate/*",
+      "method": "POST"
+    },
+    {
+      "link": "/api-introduce",
+      "method": "GET"
+    },
+    {
+      "link": "/api-car/car/*",
+      "method": "POST"
+    },
+    {
+      "link": "/api-hotel/hotel/*",
+      "method": "POST"
+    },
+    {
+      "link": "/api-tour/tour/*",
+      "method": "POST"
+    },
+    {
+      "link": "/ckeditor-upload-img",
+      "method": "POST"
+    },
+    {
+      "link": "/api-banner",
+      "method": "GET"
+    }
+  ]
+}

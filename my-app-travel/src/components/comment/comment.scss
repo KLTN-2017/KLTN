@@ -1,0 +1,161 @@
+.list-chat {
+  width: 100%;
+  h2{
+    color:#00abff;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  button {
+    // display: block;
+    border: 1px solid #00abff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: darkturquoise;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  input {
+    padding: 12px 15px;
+    font-weight: 600;
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+  .list-comments {
+    width: 90%;
+    margin: auto;
+     margin-top: 30px;
+     li{
+       .date-auth {
+         display: flex;
+        //  justify-content: center;
+         align-items: center;
+         .avatar {
+           width: 60px;
+           height: 60px;
+           background-color: rgb(10, 241, 10);
+           border-radius: 50%;
+           margin-right: 5px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: #ffff;
+           font-weight: 600;
+         }
+         .auth {
+           color: rgb(241, 145, 20);
+           margin-right: 10px;
+           font-weight: 600;
+         }
+         .date {
+           color: crimson;
+         }
+       }
+       .content-comment{
+           margin-left: 50px;
+           border-radius: 5px;
+           padding: 20px 10px;
+           background-color: #ffff;
+           height: 100px;
+          //  overflow: auto;
+           position: relative;
+           word-wrap: break-word;
+           color: #00abff;
+           .like {
+             position: absolute;
+             bottom: -10px;
+             right: 10px;
+             .fa-heart {
+               color: rgb(238, 59, 89);
+               font-size: 20px;
+               margin-left: 20px;
+               cursor: pointer;
+             }
+            .fa-thumbs-up {
+               margin-left: 20px;
+              font-size: 20px;
+              color: goldenrod;
+              cursor: pointer;
+             }
+             .reply {
+               cursor: pointer;
+             }
+           }
+           .count-reply {
+             position: absolute;
+             bottom: -10px;
+             font-style: italic;
+             cursor: pointer;
+             color: crimson;
+           }
+         }
+         .list-reply {
+           margin-left: 100px;
+           margin-top: 10px;
+           .list-reply-item {
+             width: 100%;
+             .item-relpy {
+               width: 100%;
+               padding: 10px 15px;
+               .avatar-date{
+                 width: 100%;
+                 display: flex;
+                 align-items: center;
+                 .avatar {
+                   width: 45px;
+                   height: 45px;
+                   border-radius: 50%;
+                   background-color: #00abff;
+                   justify-content: center;
+                   align-items: center;
+                   display: flex;
+                   color: rgb(220, 207, 20);
+                   font-weight: 600;
+                 }
+                 .auth {
+                   color: brown;
+                   font-weight: 600;
+                   margin-left: 10px;
+                 }
+                 .time {
+                   margin-left: 10px;
+                   color: rgb(53, 220, 20);
+                 }
+               }
+               .content-reply {
+                 background-color: #ffff;
+                 padding: 20px 20px;
+                 margin-left: 30px;
+                 border-radius: 5px;
+                 color: chocolate;
+                 word-wrap: break-word;
+               }
+             }
+             .action{
+               margin-top: 10px;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: flex-end;
+               button {
+                 margin: 0 10px;
+                 &:last-child {
+                   background-color: red;
+                   border: 1px solid red;
+                 }
+               }
+             }
+           }
+         }
+     }
+  }
+}

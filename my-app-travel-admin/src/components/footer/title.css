@@ -1,0 +1,15 @@
+.collap-footer {
+  padding: 10px;
+}
+.collap-footer i {
+  float: right;
+  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+}
+.collap-footer p {
+  float: left;
+  font-size: 1.2rem;
+}
+.collap-footer p::after {
+  clear: both;
+}

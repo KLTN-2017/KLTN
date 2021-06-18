@@ -1,0 +1,195 @@
+.list-news,
+.realtion-news {
+  margin-top: 100px;
+  width: 100%;
+  h1 {
+    text-align: center;
+    color: rgb(12, 173, 173);
+    font-weight: 700;
+    margin: 30px;
+  }
+  .list-items {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+
+    a {
+      width: 31%;
+      margin: 1%;
+      &:hover {
+        background-color: transparent;
+      }
+      .news-items {
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgb(216, 211, 211);
+        .img {
+          width: 100%;
+          height: 280px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+          .rate {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .info {
+          width: 100;
+          padding: 10px 5px;
+          .title {
+            color: #00abff;
+            margin-bottom: 20px;
+          }
+          .under-line {
+            width: 20%;
+            margin: auto;
+            color: green;
+            margin-bottom: 20px;
+          }
+          .detail {
+            display: flex;
+            font-size: 1.1rem;
+            // background-color: rgb(214, 217, 219);
+            p {
+              width: 33%;
+              display: flex;
+              justify-content: center;
+            }
+
+            p i {
+              margin-right: 10px;
+            }
+            p i.fa-map-marker-alt {
+              color: crimson;
+            }
+            p i.fa-eye {
+              color: #00abff;
+            }
+            p i.fa-calendar-week {
+              color: darkorange;
+            }
+          }
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.detail-news {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  div.realtion-news {
+    margin-top: 50px;
+    div.list-items div.slick-slider.slick-initialized{
+      width: 100%;
+      button::before {
+        color: #00abff;
+      }
+      div.slick-list div.slick-track div.slick-slide div a div.news-items{
+        padding: 5px 10px;
+      }
+    }
+    h2 {
+      color: #00abff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    div.loading-tour {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 300px;
+    }
+  }
+  h1 {
+    color: #00abff;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    //   text-align: center;
+  }
+  img {
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+  }
+}
+div.detail-news div.realtion-news div.list-items a div.news-items div.img img {
+  margin-left: 0;
+  height: 280px;
+}
+
+@media (max-width: 550px) {
+  div.App div.App div.slide {
+    margin-bottom: 0;
+  }
+  div.App div.App div.body {
+    width: 100%;
+    padding: 0 5px;
+  }
+  div.list-news div.list-items a {
+    width: 100%;
+    margin-bottom: 15px;
+    div.news-items div.img {
+      height: 220px;
+    }
+    div.news-items div.info div.detail {
+      font-size: 15px;
+    }
+  }
+  div.detail-news img {
+    width: 100%;
+    margin-left: 0;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  div.detail-news div.realtion-news div.list-items {
+    a {
+      width: 100%;
+      div.news-items div.info div.detail {
+        font-size: 15px;
+      }
+      div.news-items div.img img {
+        height: 200px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  html
+    body
+    div#root
+    div.App
+    div.App
+    div.body
+    div.detail-news
+    div.realtion-news
+    div.list-items
+    a
+    div.news-items
+    div.img {
+    height: 220;
+  }
+  div.detail-news div.ck-content {
+    padding: 0 5px;
+  }
+}
+

@@ -1,0 +1,32 @@
+.weather-user {
+  width: 100%;
+  h1 {
+    color: darkturquoise;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .detail {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://media.apnarm.net.au/media/images/2020/08/07/v3imagesbina76005dedfda6535ff832055ec0c5527-pcbcbniwrx8555v0tu2.jpg');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: crimson;
+    border-radius: 10px;
+    img {
+      width: 100px;
+    }
+    h1 {
+      color: rgb(255, 0, 43);
+      margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.pagination {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  & > button {
+    background-color: red !important;
+  }
+  .rc-pagination-item {
+    width: 50px;
+    a {
+      color: rgb(5, 64, 92);
+      font-weight: 600;
+      &:hover {
+        color: #ffff;
+      }
+    }
+  }
+  .rc-pagination-item-active {
+    background: #1890ff;
+    a {
+      color: #ffff;
+    }
+  }
+}

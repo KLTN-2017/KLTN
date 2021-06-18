@@ -1,0 +1,138 @@
+version: "3.3"
+services:
+    # gateway:
+    #     image: gateway:1.0.0
+    #     restart: always
+    #     # container_name: gateway
+    #     depends_on:
+    #         - redisD
+    #         - elasticsearch
+    #         - mongoDB
+    #     ports: 
+    #         - "9999:9999"
+    #     networks:
+    #         - webnet
+    #     links: 
+    #         - redisD
+    #         - elasticsearch
+    #         - mongoDB
+    #     environment: 
+    #         HOST_REDIS: redisD
+    #         HOST_ELASTIC: elasticsearch
+    #         URL_EL: http://elasticsearch:9200
+    #         HOST_USER: http://user:3030
+    #         HOST_TOUR: http://tour:5000
+    #         HOST_CAR_HOTEL: http://carhotel:6060  
+    #         HOST_MONGO: mongoDB
+    # user:
+    #     image: user-service:1.0.0
+    #     # container_name: user-service
+    #     restart: always
+    #     depends_on:
+    #         - db
+    #     ports: 
+    #         - "3030:3030"
+    #     networks:
+    #         - webnet
+    #     links: 
+    #         - db
+    #     environment: 
+    #         URL_DB: postgres://postgres:docker@db/public
+    # tour:
+    #     image: tour-service:1.0.0
+    #     # container_name: tour-service
+    #     restart: always
+    #     depends_on:
+    #         - db
+    #     ports: 
+    #         - "5000:5000"
+    #     networks:
+    #         - webnet
+    #     links: 
+    #         - db
+    #     environment: 
+    #         URL_DB: postgres://postgres:docker@db/public
+    # carhotel:
+    #     image: car-hotel-service:1.0.0
+    #     # container_name: car-hotel-service
+    #     restart: always
+    #     depends_on:
+    #         - db
+    #     ports: 
+    #         - "6060:6060"
+    #     networks:
+    #         - webnet
+    #     links: 
+    #         - db
+    #     environment: 
+    #         URL_DB: postgres://postgres:docker@db/public
+    # fontEndCliet:
+    #     image: fontend-client:1.0.0
+    #     restart: always
+    #     ports: 
+    #         - "3005:80"
+    #     networks: 
+    #         - webnet
+    # fontEndAdmin:
+    #     image: fontend-admin:1.0.0
+    #     restart: always
+    #     ports: 
+    #         - "3000:80"
+    #     networks: 
+    #         - webnet 
+    db:
+        image: postgres
+        # container_name: pg-travel
+        restart: always
+        ports: 
+            - "5432:5432"
+        networks:
+            - webnet
+        environment: 
+            POSTGRES_PASSWORD: docker
+            POSTGRES_USER: postgres
+            POSTGRES_DB: public
+        volumes:
+            - /Users/ha_ln/Desktop/Data/data-pg:/var/lib/postgresql/data
+    redisD:
+        image: redis
+        # container_name: redis-travel
+        restart: always
+        ports: 
+            - "6379:6379"
+        command: ["redis-server", "--appendonly", "yes"]
+        hostname: redisD
+        networks: 
+            - webnet
+        volumes: 
+            - /Users/ha_ln/Desktop/data-redis:/data
+    mongoDB:
+        image: mongo
+        restart: always
+        ports: 
+            - 27017:27017
+        networks: 
+            - webnet
+        volumes: 
+            - /Users/ha_ln/Desktop/data-mongo:/data/db
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.0.1
+        # container_name: elt-travel
+        environment:
+            - discovery.type=single-node
+            - TAKE_FILE_OWNERSHIP=true
+            - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+            # - cluster.initial_master_nodes=elasticsearch
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+        ports:
+            - "9200:9200"
+            - "9300:9300"
+        networks: 
+            - webnet
+        volumes:
+            - /Users/ha_ln/Desktop/data-elastic:/usr/share/elasticsearch/data
+networks:
+    webnet: 

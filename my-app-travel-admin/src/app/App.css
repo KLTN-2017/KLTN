@@ -1,0 +1,81 @@
+@import '~rc-pagination/assets/index.css';
+
+.App {
+  /* max-width: 768px; */
+  margin: 0 auto;
+  /* padding: 1rem; */
+  min-height: 200px;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: rgb(246, 248, 246);
+  position: relative;
+}
+div.loading-overlay {
+  /* position: absolute; */
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  background-color: rgba(15, 14, 14, 0.62);
+  top: 0;
+}
+.App .app-footer {
+  width: 100%;
+  background-color: rgb(245, 243, 243);
+}
+.slide {
+  padding-top: 80px;
+  width: 100%;
+  position: relative;
+  min-height: 600px;
+  /* height: 800px; */
+  /* overflow: hidden; */
+}
+.slide .search {
+  position: absolute;
+  bottom: -10%;
+  width: 100%;
+  z-index: 2;
+}
+.body {
+  width: 70%;
+  margin: auto;
+  /* min-height: 500px; */
+}
+@media (max-width: 450px) {
+  .body {
+    width: 90%;
+  }
+  .slide {
+    padding-top: 45px;
+    margin-bottom: 300px;
+  }
+  .slide .search {
+    bottom: -80%;
+  }
+}
+@media (max-width: 800px) {
+  .body {
+    width: 90%;
+  }
+}
+
+div.loading-overlay
+  div.ant-spin.ant-spin-lg.ant-spin-spinning.ant-spin-show-text
+  span.ant-spin-dot.ant-spin-dot-spin {
+  font-size: 200px;
+}
+html
+  body
+  div#root
+  div.App
+  div.loading-overlay
+  div.ant-spin.ant-spin-lg.ant-spin-spinning.ant-spin-show-text
+  span.ant-spin-dot.ant-spin-dot-spin
+  i.ant-spin-dot-item {
+  width: 100px;
+  height: 100px;
+}

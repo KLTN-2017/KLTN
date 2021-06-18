@@ -1,0 +1,37 @@
+html
+  body.ant-scrolling-effect
+  div
+  div.ant-modal-root
+  div.ant-modal-wrap
+  div.ant-modal
+  div.ant-modal-content
+  div.ant-modal-body
+  div.list-action {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 27%;
+    margin: 1.8%;
+    background-color: rgb(41, 235, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  span.active {
+    background-color: rgb(6, 99, 68);
+    color: #ffff;
+    font-weight: 600;
+    position: relative;
+    i {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+  }
+}

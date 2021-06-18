@@ -1,0 +1,22 @@
+.bread-crumb {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  div.ant-breadcrumb span span.ant-breadcrumb-link a {
+    font-size: 1.2rem;
+    color: green;
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+  }
+  margin-bottom: 30px;
+  span.anticon.anticon-home {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: rgb(8, 138, 170);
+    font-weight: 700;
+  }
+}

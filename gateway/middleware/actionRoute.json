@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "link": "/api-car/car",
+      "method": "POST",
+      "action": "createCar",
+      "status": "on"
+    },
+    {
+      "link": "/api-car/car/*",
+      "method": "PUT",
+      "action": "updateCar",
+      "status": "on"
+    },
+    {
+      "link": "/api-car/car/*",
+      "method": "DELETE",
+      "action": "deleteCar",
+      "status": "on"
+    },
+    {
+      "link": "/api-hotel/hotel",
+      "method": "POST",
+      "action": "createHotel",
+      "status": "on"
+    },
+    {
+      "link": "/api-hotel/hotel/*",
+      "method": "PUT",
+      "action": "updateHotel",
+      "status": "on"
+    },
+    {
+      "link": "/api-introduce",
+      "method": "POST",
+      "action": "createIntroduce",
+      "status": "on"
+    },
+    {
+      "link": "/api-news",
+      "method": "POST",
+      "action": "createNews",
+      "status": "on"
+    },
+    {
+      "link": "/api-news/*",
+      "method": "PUT",
+      "action": "updateNews",
+      "status": "on"
+    },
+    {
+      "link": "/api-news/*",
+      "method": "DELETE",
+      "action": "deleteNews",
+      "status": "on"
+    },
+    {
+      "link": "/api-permission",
+      "method": "POST",
+      "action": "createPermission",
+      "status": "on"
+    },
+    {
+      "link": "/api-permission",
+      "method": "GET",
+      "action": "getAllPermission",
+      "status": "on"
+    },
+    {
+      "link": "/api-permission/*",
+      "method": "DELETE",
+      "action": "deletePermission",
+      "status": "on"
+    },
+    {
+      "link": "/api-role-permission",
+      "method": "POST",
+      "action": "createRolePermission",
+      "status": "on"
+    },
+    {
+      "link": "/api-role-permission/all-role",
+      "method": "GET",
+      "action": "getAllRole",
+      "status": "on"
+    },
+    {
+      "link": "/api-role-permission/*",
+      "method": "DELETE",
+      "action": "deleteRolePermission",
+      "status": "on"
+    },
+    {
+      "link": "/api-role-permission/permission-of-role/*",
+      "method": "GET",
+      "action": "getActionOfRole",
+      "status": "on"
+    },
+    {
+      "link": "/api-tour/tour",
+      "method": "POST",
+      "action": "createTour",
+      "status": "on"
+    },
+    {
+      "link": "/api-tour/tour/*",
+      "method": "PUT",
+      "action": "updateTour",
+      "status": "on"
+    },
+    {
+      "link": "/api-user/page/*",
+      "method": "GET",
+      "action": "getPageCustomer",
+      "status": "on"
+    },
+    {
+      "link": "/api-user/page-employee/*",
+      "method": "GET",
+      "action": "getPageEmployee",
+      "status": "on"
+    },
+    {
+      "link": "/api-user/role-of-user/*",
+      "method": "PUT",
+      "action": "updateRoleOfEmployee",
+      "status": "on"
+    },
+    {
+      "link": "/api-user/delete-employee/*",
+      "method": "DELETE",
+      "action": "deleteEmployee",
+      "status": "on"
+    },
+     {
+       "link": "/api-user/",
+       "method": "POST",
+       "action": "createEmployee",
+      "status": "on"
+     }
+  ]
+}

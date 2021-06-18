@@ -1,0 +1,54 @@
+.body-car {
+  h1 {
+    text-align: center;
+    color: cadetblue;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  .title-list {
+    width: 100%;
+    display: flex;
+    font-size: 1.1em;
+  }
+  .title-list-car {
+    width: 60%;
+    margin-top: 10px;
+    padding-right: 100px;
+  }
+  .filter-car {
+    width: 40%;
+  }
+  .img-logo {
+    width: 80%;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 550px) {
+  div.body-car {
+    width: 100%;
+  }
+  div.body-car div.title-list {
+    display: block;
+    div.title-list-car,
+    div.filter-car {
+      padding: 0 5px;
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 20px;
+      div.css-2b097c-container {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  div.body-car div.list-car div.item-car {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+html
+  body.ant-scrolling-effect
+  div
+  div.ant-modal-root
+  div.ant-modal-wrap
+  div.ant-modal
+  div.ant-modal-content
+  div.ant-modal-body
+  div.input-permission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  input.ant-input.ant-input-lg {
+    width: 100%;
+    margin-top: 10px;
+  }
+  i {
+    margin-left: 3%;
+    width: 10%;
+    font-size: 30px;
+    color: red;
+  }
+}

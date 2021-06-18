@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: rgb(238, 226, 226);
+  height: 45px;
+  box-sizing: border-box;
+  .phone {
+    font-weight: 700;
+    color: crimson;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-weight: 700;
+      margin-left: 20px;
+      &:hover {
+        background-color: transparent;
+        color: crimson;
+      }
+    }
+  }
+  .space {
+    width: 60%;
+  }
+  .info-user-shop {
+      a.active, a:hover {
+    background: transparent;
+    }
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      cursor: pointer;
+      font-size: 30px;
+      margin-left: 30px;
+    }
+    .fa-cart-plus {
+      position: relative;
+      color: chocolate;
+      span {
+        top: -10px;
+        right: -10px;
+        position: absolute;
+        display: flex;
+        border-radius: 50%;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(241, 7, 7);
+        padding: 5px;
+        color: #ffff;
+      }
+      .list-cart {
+        cursor: default;
+        position: absolute;
+        width: 500px;
+        background-color: #fff;
+        right: -50px;
+        // min-height: 300px;
+        display: none;
+        padding: 0 30px;
+        -webkit-box-shadow: -1px 2px 37px -24px rgb(30, 34, 34);
+        -moz-box-shadow: -1px 2px 37px -24px rgb(89, 93, 94);
+        box-shadow: -1px 2px 37px -24px rgb(32, 32, 32);
+        li {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          cursor: pointer;
+          padding-right: 5px;
+          &:hover{
+              background-color: rgb(243, 238, 238);
+              color: darkturquoise;
+          }
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+        }
+        li:last-child {
+         margin-bottom: 10px;
+        }
+      }
+      &:hover {
+        .list-cart {
+          display: block;
+        }
+      }
+    }
+    .fa-user-alt {
+      position: relative;
+      color: rgb(23, 173, 173);
+      .dropdown-user-info {
+        right: 0;
+        position: absolute;
+        display: none;
+        z-index: 30;
+        background-color: green;
+        font-size: 16px;
+        padding: 0 10px;
+        li {
+          color: #ffff;
+          padding: 5px;
+          margin-bottom: 5px;
+          border-bottom: 1px solid rgb(214, 208, 208);
+        }
+      }
+      &:hover {
+        .dropdown-user-info {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    height: 30px;
+    .phone {
+      a {
+        margin-left: 5px;
+      }
+    }
+  }
+  .header .phone {
+    width: 50%;
+  }
+  .header .space {
+    width: 0;
+  }
+  .header .info-user-shop {
+    width: 50%;
+    i {
+      font-size: 20px;
+    }
+  }
+}

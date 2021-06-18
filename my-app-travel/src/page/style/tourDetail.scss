@@ -1,0 +1,214 @@
+.body-tour-detail {
+  margin-top: 150px;
+  h1:first-child {
+    padding-left: 30px;
+    color: #1c9f9f;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .tour-detail {
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+    .editor {
+      width: 68%;
+      padding: 0px 20px;
+      img {
+        width: 100%;
+        max-height: 600px;
+        margin-bottom: 50px;
+      }
+      .content-tour {
+        width: 100%;
+        min-height: 200px;
+        position: relative;
+        .not-content-tour {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+          min-height: 500px;
+        }
+      }
+    }
+    .detail-info {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      .info {
+        padding: 10px 12px;
+        border: 1px solid rgb(199, 199, 194);
+        h3 {
+          color: brown;
+          margin-bottom: 20px;
+        }
+        li {
+          border-top: 1px solid rgb(170, 164, 164);
+          width: 95%;
+          margin: auto;
+          padding: 15px 10px;
+          label {
+            font-weight: 700;
+          }
+        }
+      }
+      .book-tour {
+        margin-top: 50px;
+        padding: 10px 12px;
+        color: #ffff;
+        border: 1px solid rgb(199, 199, 194);
+        background-color: #09454f;
+        & p:first-child {
+          font-weight: 700;
+          font-size: 2em;
+        }
+        .react-date-picker {
+          margin-top: 20px;
+          width: 80%;
+          margin-left: 10%;
+          font-size: 1.2em;
+          input {
+            color: white;
+          }
+          button {
+            background-color: rgb(231, 16, 16);
+          }
+        }
+        & > button {
+          margin-top: 20px;
+          width: 80%;
+          margin-left: 10%;
+          padding: 10px 0;
+          background-color: rgb(85, 219, 23);
+          color: #ffff;
+          border: none;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          font-weight: 600;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .tour-relation {
+    h1{
+      text-align: center;
+    }
+    .list-tour-relation {
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      div.slick-slider.slick-initialized {
+        width: 100%;
+        button::before{
+      color: red;
+      font-size: 30px !important;
+    }
+      }
+      a {
+        width: 30%;
+        margin: 0.8%;
+      }
+    }
+  }
+  .list-item-weather {
+  margin-top: 20px;
+  width: 100%;
+  
+  div.slick-slider.slick-initialized{
+    width: 100%;
+    button::before{
+      color: red;
+      font-size: 30px !important;
+    }
+    div.slick-list
+    div.slick-track
+    div.slick-slide {
+    div {
+      margin: 0 10px;
+      .item {
+        width: 24%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid green;
+        background-color: #4ca8a82e;
+        margin: 20px 0.5%;
+        padding: 20px 5px;
+        border-radius: 10px;
+        p {
+          margin-bottom: 10px;
+        }
+        .main {
+          color: darkcyan;
+          font-weight: 500;
+        }
+        .time {
+          color: rgb(252, 186, 21);
+          margin-top: 10px;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+        .temp {
+          color: crimson;
+        }
+        .cloud-wind {
+          color: darkslategrey;
+        }
+      }
+    }
+  }
+    
+  }
+}
+
+@media (max-width: 550px) {
+  div.body-tour-detail div.tour-detail {
+    display: block;
+    div.editor,
+    div.detail-info {
+      width: 100%;
+    }
+    div.edtior img {
+      height: 500px;
+    }
+  }
+  html
+    body
+    div#root
+    div.App
+    div.App
+    div.body
+    div.body-tour-detail
+    div.tour-detail
+    div.editor
+    img {
+    height: 300px;
+  }
+  div.body-tour-detail div.tour-relation div.list-tour-relation a {
+    width: 100%;
+  }
+   .slick-next{
+      right: 0;
+      z-index: 10;
+      font-size: 50px;
+    }
+    .slick-prev{
+      left: 0;
+      z-index: 10;
+      font-size: 50px;
+    }
+}
+}
+
